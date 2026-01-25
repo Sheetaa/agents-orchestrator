@@ -15,10 +15,13 @@ OpenCode-Flowchestra is an OpenCode primary agent that executes multi-agent work
 
 ```bash
 # Project-level (to .opencode/)
-./install.sh
+curl -fsSL https://raw.githubusercontent.com/Sheetaa/flowchestra/main/packages/opencode-flowchestra/install.sh | bash
 
 # Or global (to ~/.config/opencode/)
-./install.sh --global
+curl -fsSL https://raw.githubusercontent.com/Sheetaa/flowchestra/main/packages/opencode-flowchestra/install.sh | bash -s -- --global
+
+# Install from a specific branch
+curl -fsSL https://raw.githubusercontent.com/Sheetaa/flowchestra/main/packages/opencode-flowchestra/install.sh | bash -s -- --branch develop
 ```
 
 
