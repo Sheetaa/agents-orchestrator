@@ -19,6 +19,9 @@ curl -fsSL https://raw.githubusercontent.com/Sheetaa/flowchestra/main/packages/o
 
 # Or global (to ~/.config/opencode/)
 curl -fsSL https://raw.githubusercontent.com/Sheetaa/flowchestra/main/packages/opencode-flowchestra/install.sh | bash -s -- --global
+
+# Install from a specific branch
+curl -fsSL https://raw.githubusercontent.com/Sheetaa/flowchestra/main/packages/opencode-flowchestra/install.sh | bash -s -- --branch develop
 ```
 
 
