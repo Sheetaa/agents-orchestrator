@@ -1,10 +1,10 @@
-# Agents Orchestrator
+# Flowchestra
 
 A Markdown-based multi-agent orchestration framework using Mermaid flowcharts.
 
 ## Overview
 
-Agents Orchestrator allows you to define complex multi-agent workflows in a single Markdown file, combining:
+Flowchestra allows you to define complex multi-agent workflows in a single Markdown file, combining:
 
 - **YAML frontmatter** for metadata and configuration
 - **Mermaid flowchart** for visual workflow definition
@@ -40,23 +40,23 @@ Agent nodes are color-coded by mode:
 
 ```mermaid
 flowchart TD
-    begin((开始)) --> prepare[准备代码]
-    prepare --> ai_review[AI 审查]
+    begin((Start)) --> prepare[Prepare Code]
+    prepare --> ai_review[AI Review]
     
-    ai_review --> security[安全检查]
-    ai_review --> performance[性能检查]
-    ai_review --> code_style[代码风格]
+    ai_review --> security[Security Check]
+    ai_review --> performance[Performance Check]
+    ai_review --> code_style[Code Style]
     
-    security --> aggregate[汇总结果]
+    security --> aggregate[Aggregate Results]
     performance --> aggregate
     code_style --> aggregate
     
-    aggregate --> human_review{{人工审批}}
+    aggregate --> human_review{{Human Review}}
     
-    human_review -->|approve| summarize[生成总结]
+    human_review -->|approve| summarize[Generate Summary]
     human_review -->|reject| prepare
     
-    summarize --> finish((结束))
+    summarize --> finish((End))
     
     classDef startend fill:#2ecc71,stroke:#27ae60,color:#fff
     classDef primary fill:#2980b9,stroke:#2980b9,color:#fff
@@ -80,10 +80,15 @@ flowchart TD
 | **Loop** | `B --> A` (back edge) | Retry/iterate |
 | **Subgraph** | `subgraph name[...]` | Group related nodes |
 
+## Implementations
+
+- **OpenCode**: [`packages/opencode-flowchestra`](packages/opencode-flowchestra) implements the framework as a primary agent inside OpenCode.
+- **Other agents**: future implementations may target different coding agents (e.g. Claude Code).
+
 ## Documentation
 
-- [Workflow Specification](docs/WORKFLOW_SPEC.md) - Complete specification
-- [Workflow Example](docs/WORKFLOW_EXAMPLE.md) - Code review workflow example
+- [Flowchestra Specification](docs/FLOWCHESTRA_SPEC.md) - Complete specification
+- [Flowchestra Example](docs/FLOWCHESTRA_EXAMPLE.md) - Code review workflow example
 
 ## License
 
