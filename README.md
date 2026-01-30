@@ -19,6 +19,24 @@ Flowchestra allows you to define complex multi-agent workflows in a single Markd
 - **Subgraphs** - Organize complex workflows into logical groups
 - **State Management** - Share data between nodes via global state
 
+## Comparison: Flowchestra vs LangGraph vs oh-my-opencode
+
+Flowchestra focuses on a **Markdown-native workflow spec** that is visual, readable, and versionable. Compared to other approaches, it optimizes for clarity and portability of orchestration logic.
+
+| Dimension | Flowchestra | LangGraph | oh-my-opencode |
+|---|---|---|---|
+| **Core focus** | Markdown-native workflow spec | Low-level graph orchestration framework | Batteries-included agent harness |
+| **Definition format** | **Mermaid + Markdown** in a single file | Code-first graph APIs | CLI + plugin/tooling suite |
+| **Readability & review** | **High** (docs are the workflow) | Medium (logic in code) | Medium (config + tooling) |
+| **Onboarding cost** | **Low** (write Markdown + Mermaid) | Medium–High (graph/state APIs) | Medium (install + tool stack) |
+| **Structure & reuse** | **High** (single-file spec, modular nodes) | High (graph composition) | Medium (preset agents & tools) |
+| **Best fit** | Human-readable, sharable workflows | Long-running/stateful systems | Turnkey coding agent setups |
+
+**Summary:**
+- **LangGraph** is ideal when you need low-level control over stateful, long-running agents.
+- **oh-my-opencode** shines as a full-stack, preconfigured agent environment.
+- **Flowchestra** is the best choice when you want orchestration to be **visual, auditable, and easy to share** as a single Markdown artifact.
+
 ## Node Types
 
 | Type | Mermaid Shape | Description |
