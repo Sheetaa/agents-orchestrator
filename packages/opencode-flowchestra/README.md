@@ -4,10 +4,8 @@ OpenCode-Flowchestra is an OpenCode primary agent that executes multi-agent work
 
 ## Key Features
 
-- **AI-Native Understanding** - No Mermaid parser needed; AI reads and understands flowcharts
-- **OpenCode Integration** - Native primary agent with full ecosystem access
-- **Multi-Agent Orchestration** - Coordinates multiple subagents via Task tool
-- **Control Flow Support** - Sequential, parallel, conditional, merge, and loop structures
+- **Multi-Agent Orchestration** - Coordinates multiple agents via Markdown Mermaid Flowcharts
+- **Highly Customizable** - A single Markdown file defines an entire Multi-Agent Workflow
 - **Human-in-the-Loop** - Built-in support for human approval nodes
 - **In-Memory State** - Simple state management during execution
 
